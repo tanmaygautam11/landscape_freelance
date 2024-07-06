@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./HeroSection.css";
-import arrow from "../../../assets/arrow.svg";
+import arrow from "../../../../assets/arrow.svg";
 
 const HeroSection = () => {
   const images = [
@@ -40,7 +40,7 @@ const HeroSection = () => {
         showThumbs={false}
         infiniteLoop={true}
         autoPlay={true}
-        interval={5000}
+        interval={3000}
         showStatus={false}
         onChange={(index) => setCurrentSlide(index)}
         renderArrowNext={customRenderArrowNext}
@@ -56,6 +56,7 @@ const HeroSection = () => {
       </Carousel>
       <div className="hero-overlay"></div>
       <div className="hero-text">
+        <p>CONSTRUCTION & LANDSCAPING LLC</p>
         <h1>We Bring Your Landscape to Life.</h1>
         <button>VIEW PROJECT</button>
       </div>
