@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 .header {
   background-color: transparent;
@@ -10,21 +10,21 @@
 }
 
 .header.scrolled {
-    background-color:#1a2d21;
+  background-color: #1a2d21;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
 }
 
 .logo img {
-    width: 65%;
+  width: 80%;
   /* height: 40px; Adjust size as needed */
 }
 
@@ -41,6 +41,8 @@
   width: max-content;
   margin-right: 20px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links li a {
@@ -53,25 +55,25 @@
 }
 
 .nav-link {
-    height: 1.7rem;
+  height: 2rem;
 }
 
 .nav-link a:after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: 0;
-    transition: 0.3s;
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #fff;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
 }
 
 .nav-link a:hover:after {
-    width: 100%;
+  width: 100%;
+}
+
+.nav-link a.active:after {
+  width: 100%;
 }
 
 .contact-button {

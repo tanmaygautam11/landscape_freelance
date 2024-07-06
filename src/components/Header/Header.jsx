@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/logo.png";
 
@@ -14,41 +14,61 @@ const Header = () => {
     });
   };
   scrollAnimation();
+
   return (
     <header className="header">
       <div className="nav-holder">
         <nav className="navbar">
           <div className="logo">
-            <Link to="/">
-              <img
-                src={logo}
-                alt="Baten"
-              />
-            </Link>
+            <NavLink to="/">
+              <img src={logo} alt="Baten" />
+            </NavLink>
           </div>
           <ul className="nav-links">
             <li className="nav-link">
-              <Link to="/">Home</Link>
+              <NavLink to="/" activeClassName="active">
+                Home
+              </NavLink>
             </li>
             <li className="nav-link">
-              <Link to="/about">About</Link>
+              <NavLink to="/about" activeClassName="active">
+                About
+              </NavLink>
             </li>
             <li className="nav-link">
-              <Link to="/services">Services</Link>
-            </li>
-
-            <li className="nav-link">
-              <Link to="/order">Order Online</Link>
-            </li>
-
-            <li className="nav-link">
-              <Link to="/reviews">Reviews</Link>
+              <NavLink to="/services" activeClassName="active">
+                Services
+              </NavLink>
             </li>
             <li className="nav-link">
-              <Link to="/gallery">Gallery</Link>
+              <NavLink to="/order" activeClassName="active">
+                Order Online
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/reviews" activeClassName="active">
+                Reviews
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/gallery" activeClassName="active">
+                Gallery
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/tips" activeClassName="active">
+                Tips
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/joinUs" activeClassName="active">
+                Join Us
+              </NavLink>
             </li>
             <li className="contact-button">
-              <Link to="/contact">Contact</Link>
+              <NavLink to="/contact" activeClassName="active">
+                Contact
+              </NavLink>
             </li>
           </ul>
         </nav>
