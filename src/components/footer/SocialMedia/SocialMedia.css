@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-.footer {
+.social-media-footer {
   background: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb")
     no-repeat center/cover;
   background-position: center top;
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.footer::before {
+.social-media-footer::before {
   content: "";
   position: absolute;
   top: 0;
