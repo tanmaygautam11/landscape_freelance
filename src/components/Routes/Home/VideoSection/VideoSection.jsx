@@ -6,8 +6,8 @@ const VideoSection = () => {
       <h2 className="video-title">PRESS</h2>
       <div className="video-container">
         <iframe
-          width="824"
-          height="455"
+          width="560"
+          height="315"
           src="https://www.youtube.com/embed/KtIyHq0dNXM"
           title="Lawn and Landscaping Services"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
