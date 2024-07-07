@@ -66,7 +66,9 @@ const Header = () => {
               </NavLink>
             </li>
             <li className="contact-button">
-              <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink to="/contact" activeClassName="active">
+                Contact
+              </NavLink>
             </li>
           </ul>
         </nav>
