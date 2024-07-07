@@ -1,8 +1,8 @@
 import "./SocialMedia.css";
-import facebook from "../../../assets/socials/facebook.png";
-import twitter from "../../../assets/socials/twitter.png";
-import instagram from "../../../assets/socials/instagram.png";
-import linkedin from "../../../assets/socials/linkedin.png";
+import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import XIcon from "@mui/icons-material/X";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const SocialMedia = () => {
   return (
@@ -11,10 +11,10 @@ const SocialMedia = () => {
         <h2>SOCIAL MEDIA</h2>
         <p>Follow us on Social Media</p>
         <div className="icons">
-          <img src={facebook} alt="facebook" />
-          <img src={twitter} alt="twitter" />
-          <img src={instagram} alt="instagram" />
-          <img src={linkedin} alt="linkedin" />
+          <FacebookRoundedIcon sx={{ color: "#fff", fontSize: 42 }} />
+          <InstagramIcon sx={{ color: "#fff", fontSize: 42 }} />
+          <LinkedInIcon sx={{ color: "#fff", fontSize: 42 }} />
+          <XIcon sx={{ color: "#fff", fontSize: 35 }} />
         </div>
       </div>
     </div>

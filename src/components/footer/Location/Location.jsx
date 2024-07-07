@@ -1,17 +1,16 @@
 import "./Location.css";
-
+import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import XIcon from "@mui/icons-material/X";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Location = () => {
   return (
     <div className="location-container">
       <div className="address">
         <h2> Baten Construction and Landscaping LLC</h2>
-
         <p>2611 Kirtland Ave.</p>
         <p>Forestville, MD 20747</p>
         <p>United States</p>
-        <br />
-        <hr />
-        <br />
         <div className="contact-link">
           <p>
             <strong>Phone:</strong> 301-915-5370
@@ -24,13 +23,14 @@ const Location = () => {
           </p>
         </div>
       </div>
-      <div className="map">
-        <iframe
-          src="https://www.google.com/maps/d/embed?mid=1I0tlGKMhjPgztM1Tz4MrawGTHyI&ehbc=2E312F"
-          width="100%"
-          height="300"
-          title="Location Map"
-        ></iframe>
+      <hr />
+
+      <div className="footer-icons">
+        <FacebookRoundedIcon sx={{ color: "#fff", fontSize: 42 }} />
+        <XIcon sx={{ color: "#fff", fontSize: 37 }} />
+
+        <InstagramIcon sx={{ color: "#fff", fontSize: 42 }} />
+        <LinkedInIcon sx={{ color: "#fff", fontSize: 42 }} />
       </div>
     </div>
   );
