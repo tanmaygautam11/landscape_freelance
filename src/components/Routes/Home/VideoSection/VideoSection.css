@@ -1,0 +1,29 @@
+.video-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: url("https://img.freepik.com/premium-photo/serenity-nature-minimalistic-light-background-with-blurred-foliage_954894-61720.jpg?")
+    no-repeat center/cover;
+  position: relative;
+  color: #2a2a2a;
+}
+
+.video-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.video-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  margin-bottom: 20px;
+}
+
+.media-logos img {
+  margin: 0 10px;
+  height: 40px;
+  vertical-align: middle;
+}
