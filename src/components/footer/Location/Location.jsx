@@ -18,9 +18,12 @@ const Location = () => {
               <strong>Phone:</strong> 301-915-5370
             </p>
             <p>
+              <strong>Phone:</strong> 240-413-0234
+            </p>
+            <p>
               <strong>Email: </strong>
-              <a href="mailto:info@lawnandlandscaping.us">
-                <u>info@lawnandlandscaping.us</u>
+              <a href="mailto:info@batenllc.com">
+                <u>info@batenllc.com</u>
               </a>
             </p>
           </div>

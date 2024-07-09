@@ -6,9 +6,10 @@ import arrow from "../../../../assets/arrow.svg";
 
 const HeroSection = () => {
   const images = [
-    "https://images.pexels.com/photos/914682/pexels-photo-914682.jpeg?auto=compress&cs=tinysrgb",
-    "https://images.pexels.com/photos/116910/pexels-photo-116910.jpeg?auto=compress&cs=tinysrgb",
     "https://images.pexels.com/photos/7174108/pexels-photo-7174108.jpeg?auto=compress&cs=tinysrgb",
+    "https://images.pexels.com/photos/914682/pexels-photo-914682.jpeg?auto=compress&cs=tinysrgb",
+    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgV_CXQz-VRECLGtdVA1Wcdjdp1N6RS8t8UJ-L_nIjqac9pz0K-7HyajoMGvJ8M_2amqruqr7SF5qwl7_EVuZyIO5hnlSby9rdcLFUpN1HCb626AY5ke1F70Vte5GVTJDrdh7LKQeFChRU/s1600/LAWN_STRIPES_2.jpg",
+    "https://www.floresartscape.com/upload/large/header-bg_573_large_Cd-hgjvmgD.jpg",
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
 
