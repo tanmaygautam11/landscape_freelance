@@ -1,0 +1,46 @@
+.transparent-card {
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-price {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.card-description {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+  color: #ffffff;
+}
+
+.card-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 50px;
+  color: #fff;
+  background-color: #427c4d;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 25px;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.card-button:hover {
+  background-color: #305b38;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}

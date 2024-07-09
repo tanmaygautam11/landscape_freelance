@@ -1,0 +1,46 @@
+.landscape-section {
+  background: url("https://images.pexels.com/photos/22064359/pexels-photo-22064359/free-photo-of-green-leaves-on-a-shrub.jpeg?auto=compress&cs=tinysrgb")
+    no-repeat center/cover;
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 20px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.landscape-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(29, 45, 40, 0.8); /* Overlay color with opacity */
+  filter: blur(25px);
+  z-index: 1;
+}
+
+.service-menu {
+  text-align: center;
+  z-index: 2;
+}
+.service-menu h2 {
+  font-size: 1.3rem;
+  letter-spacing: 2.5px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+}
+
+.service-menu h3 {
+  font-size: 2.7rem;
+  margin: 0.5rem 0 1.5rem;
+  font-family: "Playfair Display", serif;
+}
+
+.landscape-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
