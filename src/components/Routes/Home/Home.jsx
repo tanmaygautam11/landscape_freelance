@@ -10,8 +10,8 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <ServicesMenu />
-      <VideoSection />
       <SocialMedia />
+      <VideoSection />
     </div>
   );
 };
