@@ -1,7 +1,10 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./Testimonial.css";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './Testimonial.css';
 
 const testimonials = [
   {
@@ -19,6 +22,47 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Trigger animation only once
+    threshold: 0.1, // Trigger when 20% of the element is visible
+  });
+
+  const containerVariants = {
+    hidden: { opacity: 0.4 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: 'easeOut',
+      },
+    },
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        delay: 0.5, // Delay to stagger animation
+        ease: 'easeOut',
+      },
+    },
+  };
+
+  const authorVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.7,
+        delay: 1, // Delay to stagger animation
+        ease: 'easeOut',
+      },
+    },
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -28,20 +72,30 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="testimonials-section">
+    <motion.section
+      ref={ref}
+      className="testimonials-section"
+      initial="hidden"
+      animate={inView ? 'visible' : 'hidden'}
+      variants={containerVariants}
+    >
       <div className="overlay"></div>
-      <h2>TESTIMONIALS</h2>
-      <h3>Dont take our word for it, read our reviews</h3>
+      <motion.h2 variants={textVariants}>TESTIMONIALS</motion.h2>
+      <motion.h3 variants={textVariants}>Don't take our word for it, read our reviews</motion.h3>
 
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="testimonial">
-            <p>{testimonial.text}</p>
-            <i className="author">— {testimonial.author}</i>
-          </div>
+          <motion.div
+            key={index}
+            className="testimonial"
+            variants={textVariants}
+          >
+            <motion.p variants={textVariants}>{testimonial.text}</motion.p>
+            <motion.i className="author" variants={authorVariants}>— {testimonial.author}</motion.i>
+          </motion.div>
         ))}
       </Slider>
-    </section>
+    </motion.section>
   );
 };
 
