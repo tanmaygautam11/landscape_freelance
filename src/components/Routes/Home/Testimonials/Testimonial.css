@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+.testimonials-section {
+  position: relative;
+  background: url("https://images.pexels.com/photos/4250581/pexels-photo-4250581.jpeg?auto=compress&cs=tinysrgb")
+    no-repeat center center;
+  background-size: cover;
+  padding: 100px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.testimonials-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 93, 40, 0.84); /* Tint color */
+  z-index: 0;
+}
+
+.testimonials-section h2 {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 0.5em;
+  letter-spacing: 4.5px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  z-index: 1;
+  font-weight: 300;
+}
+
+.testimonials-section h3 {
+  position: relative;
+  font-size: 32px;
+  margin-bottom: 2em;
+  color: white;
+  font-family: "Playfair Display", serif;
+  z-index: 1;
+  font-weight: 400;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  z-index: 1;
+}
+
+.testimonial p {
+  font-size: 16px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  line-height: 30px;
+  padding-bottom: 30px;
+  font-weight: 400;
+}
+.author {
+  font-size: 16px;
+  color: white;
+  font-family: "Mulish", sans-serif;
+}
