@@ -5,6 +5,8 @@ import Home from "./components/Routes/Home/Home";
 import About from "./components/Routes/About/About";
 import Review from "./components/Routes/Reviews/Review";
 import Gallery from "./components/Routes/Gallery/Gallery";
+import Tips from "./components/Routes/Tips/Tips";
+
 import Footer from "./components/footer/Footer";
 import Loader from "./components/Preloader/Loader"; // Import Loader component
 import ScrollToTop from "./components/ScrollToTopButton/Scroll ToTop";
@@ -34,6 +36,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/reviews" element={<Review />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/tips" element={<Tips />} />
       </Routes>
       <Footer />
     </BrowserRouter>
