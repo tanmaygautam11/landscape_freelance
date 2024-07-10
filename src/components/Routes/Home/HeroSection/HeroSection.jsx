@@ -3,6 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./HeroSection.css";
 import arrow from "../../../../assets/arrow.svg";
+import { NavLink } from "react-router-dom";
 
 // Custom fade animation handler
 const customFadeAnimationHandler = (props, state) => {
@@ -101,7 +102,11 @@ const HeroSection = () => {
       <div className="hero-text">
         <p>CONSTRUCTION & LANDSCAPING LLC</p>
         <h1>We Bring Your Landscape to Life.</h1>
-        <button>VIEW PROJECT</button>
+        <button>
+          <NavLink to="/gallery" className="custom-navlink">
+            VIEW PROJECTS
+          </NavLink>
+        </button>
       </div>
       <div className="carousel-status">
         {currentSlide + 1} / {images.length}

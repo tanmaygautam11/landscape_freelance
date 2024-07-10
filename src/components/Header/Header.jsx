@@ -35,12 +35,56 @@ const Header = () => {
                 About
               </NavLink>
             </li>
-            <li className="nav-link">
-              <NavLink to="/services" activeClassName="active">
-                Services
-              </NavLink>
+            <li className="nav-link dropdown">
+              <span className="dropdown-link">Our Services</span>
+              <ul className="dropdown-menu">
+                <li>
+                  <a
+                    href="https://booknow.lawnandlandscaping.us/23-mowing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Lawn Mowing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://booknow.lawnandlandscaping.us/22-landscaping"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Landscaping
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://booknow.lawnandlandscaping.us/24-tree-removal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tree Removal
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://booknow.lawnandlandscaping.us/33-powerwash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Power Washing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://booknow.lawnandlandscaping.us/32-roofing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Roofing
+                  </a>
+                </li>
+              </ul>
             </li>
-
             <li className="nav-link">
               <NavLink to="/reviews" activeClassName="active">
                 Reviews

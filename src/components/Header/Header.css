@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* Header.css */
 
 .header {
   background-color: transparent;
@@ -26,7 +26,6 @@
 .logo img {
   width: 50%;
   animation: slideBottom 0.7s ease-in forwards;
-  /* height: 40px; Adjust size as needed */
 }
 
 .nav-links {
@@ -108,4 +107,51 @@
   background-color: #305b38;
   color: #fff;
   transition: 0.3s ease-in-out;
+}
+
+/* Dropdown styles */
+.dropdown-link {
+  cursor: pointer;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a2d21;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+  display: none;
+}
+
+.nav-link.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #427c4d;
 }
