@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 .about {
-  font-family: "Arial, sans-serif";
+  font-family: "Mulish", sans-serif;
   color: #4d4d4d;
   background-color: #e9f0ea;
-  padding-top: 0; /* Remove extra padding from the top */
+  padding-top: 0;
 }
 
 .about-header {
@@ -23,37 +25,63 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(21, 35, 23, 0.695); /* dark greenish overlay  */
+  background: rgba(21, 35, 23, 0.695);
 }
 
 .about-container {
-  max-width: 800px;
   margin: 0 auto;
   text-align: left;
+  padding: 50px 130px 130px 130px;
 }
 
 .about h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 54px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
 }
-
 .company-section {
-  margin-top: 20px;
+  margin: 50px 0px;
+}
+.company-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
 }
 
-.company-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.company-content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 80px 0; /* Adjust as needed */
 }
 
 .about-image {
-  width: 100%;
+  width: 40%;
   height: auto;
-  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.company-text {
+  flex: 1;
+  margin-right: 50px;
 }
 
 .company-section p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 30px;
   margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.company-text a {
+  color: #006400;
+  text-decoration: none;
+}
+
+.company-text a:hover {
+  text-decoration: underline;
 }
