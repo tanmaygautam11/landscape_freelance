@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+.whyus-container {
+  background: url("https://images.pexels.com/photos/7587467/pexels-photo-7587467.jpeg?auto=compress&cs=tinysrgb")
+    no-repeat center center/cover;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.whyus-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  z-index: 1;
+}
+
+.whyus-content {
+  position: relative;
+  z-index: 2;
+}
+
+.whyus-content h1 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  font-family: "Mulish", sans-serif;
+}
+
+.whyus-content h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.whyus-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.whyus-card {
+  background: #1a2d21;
+  width: 684px;
+  height: 144px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.card-icon {
+  background-color: #427c4d;
+  width: 70px;
+  height: 144px;
+  position: relative;
+  margin-right: 100px;
+}
+
+.card-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-left: 72px solid #427c4d;
+  border-top: 72px solid transparent;
+  border-bottom: 72px solid transparent;
+}
+
+.whyus-card p {
+  color: #ffffff;
+  text-align: left;
+  font-size: 22px;
+  margin-right: 60px;
+  font-weight: 300;
+  font-family: "Mulish", sans-serif;
+}
+.whyus-card strong {
+  font-weight: 700;
+}
+
+.whyus-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 50px;
+  color: #fff;
+  background-color: #427c4d;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 25px;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.whyus-button:hover {
+  background-color: #305b38;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
