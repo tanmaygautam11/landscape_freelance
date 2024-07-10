@@ -4,6 +4,46 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./HeroSection.css";
 import arrow from "../../../../assets/arrow.svg";
 
+// Custom fade animation handler
+const customFadeAnimationHandler = (props, state) => {
+  const transitionTime = `${props.transitionTime}ms`;
+  const transitionTimingFunction = "ease-in-out";
+
+  let slideStyle = {
+    position: "absolute",
+    display: "block",
+    zIndex: -2,
+    minHeight: "100%",
+    opacity: 0,
+    top: 0,
+    right: 0,
+    left: 0,
+    bottom: 0,
+    transitionTimingFunction: transitionTimingFunction,
+    WebkitTransitionTimingFunction: transitionTimingFunction,
+    MozTransitionTimingFunction: transitionTimingFunction,
+    msTransitionTimingFunction: transitionTimingFunction,
+    OTransitionTimingFunction: transitionTimingFunction,
+  };
+
+  if (!state.swiping) {
+    slideStyle = {
+      ...slideStyle,
+      WebkitTransitionDuration: transitionTime,
+      MozTransitionDuration: transitionTime,
+      OTransitionDuration: transitionTime,
+      transitionDuration: transitionTime,
+      msTransitionDuration: transitionTime,
+    };
+  }
+
+  return {
+    slideStyle,
+    selectedStyle: { ...slideStyle, opacity: 1, position: "relative" },
+    prevStyle: { ...slideStyle },
+  };
+};
+
 const HeroSection = () => {
   const images = [
     "https://images.pexels.com/photos/7174108/pexels-photo-7174108.jpeg?auto=compress&cs=tinysrgb",
@@ -45,6 +85,8 @@ const HeroSection = () => {
         showStatus={false}
         onChange={(index) => setCurrentSlide(index)}
         renderArrowNext={customRenderArrowNext}
+        animationHandler={customFadeAnimationHandler}
+        swipeable={false} // Disable swipe as the fade animation does not support it
       >
         {images.map((url, index) => (
           <div key={index} className="hero-slide">
