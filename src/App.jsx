@@ -5,6 +5,7 @@ import Home from "./components/Routes/Home/Home";
 import About from "./components/Routes/About/About";
 import Footer from "./components/footer/Footer";
 import Loader from "./components/Preloader/Loader"; // Import Loader component
+import ScrollToTop from "./components/ScrollToTopButton/Scroll ToTop";
 import "./styles.css";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
