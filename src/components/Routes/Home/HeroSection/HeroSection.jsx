@@ -102,11 +102,10 @@ const HeroSection = () => {
       <div className="hero-text">
         <p>CONSTRUCTION & LANDSCAPING LLC</p>
         <h1>We Bring Your Landscape to Life.</h1>
-        <button>
-          <NavLink to="/gallery" className="custom-navlink">
-            VIEW PROJECTS
-          </NavLink>
-        </button>
+
+        <NavLink to="/gallery" className="custom-navlink">
+          <button> VIEW PROJECTS</button>
+        </NavLink>
       </div>
       <div className="carousel-status">
         {currentSlide + 1} / {images.length}
