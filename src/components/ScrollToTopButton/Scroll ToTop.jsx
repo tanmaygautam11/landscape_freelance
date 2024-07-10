@@ -9,14 +9,14 @@ const ScrollToTop = () => {
       behavior: 'smooth' // Smooth scrolling behavior
     });
   };
-  const [showButton, setShowButton] = useState(false);
+  const [hideButton, setHideButton] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 15) {
-        setShowButton(false);
+        setHideButton(false);
       } else {
-        setShowButton(true);
+        setHideButton(true);
       }
     };
 
@@ -30,7 +30,7 @@ const ScrollToTop = () => {
   }, []); // Empty dependency array ensures this effect runs only once
 
   return (
-    <button class={`button ${showButton ? 'show' : ''}`} onClick={scrollToTop}>
+    <button class={`button ${hideButton ? 'show' : ''}`} onClick={scrollToTop}>
       <div class="arrow">
         <ArrowUpwardIcon />
       </div>
