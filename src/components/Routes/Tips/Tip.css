@@ -1,0 +1,53 @@
+.tip-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tip-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tip-content {
+  padding: 30px;
+}
+
+.tip-title {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tip-text {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  color: #4d4d4d;
+  margin-bottom: 20px;
+}
+
+.read-more-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 18px 60px;
+  color: #fff;
+  background-color: #427c4d;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+}
+
+.read-more-button:hover {
+  background-color: #305b38;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}

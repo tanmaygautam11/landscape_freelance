@@ -28,41 +28,30 @@
   background: rgba(21, 35, 23, 0.7);
   z-index: 1;
 }
+.full-tip {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-.header-title {
+.full-tip h2 {
   font-family: "Playfair Display", serif;
-  font-size: 36px;
-  color: #ffffff;
-  z-index: 2;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
-.tips-company {
-  font-family: "Playfair Display", serif;
-  font-size: 18px;
-  letter-spacing: 4.5px;
-  font-weight: 300;
-  color: #4d4d4d;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 20px;
+.full-tip p {
+  font-family: "Mulish", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
 }
 
-.tips-container {
-  margin: 0 auto;
-  text-align: left;
-  padding: 50px 130px 130px 130px;
-}
-
-.tips-heading {
-  font-size: 54px;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.tips-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
+.full-tip-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
