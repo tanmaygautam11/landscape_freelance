@@ -36,7 +36,9 @@ const Header = () => {
               </NavLink>
             </li>
             <li className="nav-link dropdown">
-              <span className="dropdown-link">Our Services</span>
+              <NavLink to="/services" activeClassName="active dropdown-link">
+                Our Services
+              </NavLink>
               <ul className="dropdown-menu">
                 <li>
                   <a
@@ -90,11 +92,7 @@ const Header = () => {
                 Reviews
               </NavLink>
             </li>
-            <li className="nav-link">
-              <NavLink to="/gallery" activeClassName="active">
-                Gallery
-              </NavLink>
-            </li>
+
             <li className="nav-link">
               <NavLink to="/tips" activeClassName="active">
                 Tips
