@@ -1,4 +1,7 @@
 export const tipsData = [
+  // <br/> for line break
+  // \b for bold
+  // \n for new paragraph
   {
     id: 1,
     title: "The yard is starving for organic matter. ",
