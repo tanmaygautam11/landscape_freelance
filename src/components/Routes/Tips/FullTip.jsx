@@ -16,6 +16,8 @@ const FullTip = () => {
         <div className="overlay"></div>
       </div>
       <div className="full-tip-content">
+        <h2 className="tips-company">Baten Construction & Landscaping</h2>
+
         <h1 className="full-tip-title">{title}</h1>
         <div className="full-tip-body">
           <img src={image} alt={title} className="full-tip-image" />

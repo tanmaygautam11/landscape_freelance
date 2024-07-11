@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
-.tips {
+.full-tip-page {
   font-family: "Mulish", sans-serif;
   color: #4d4d4d;
   background-color: #e9f0ea;
   padding-top: 0;
+  padding-bottom: 100px;
 }
 
 .tips-header {
@@ -28,30 +27,40 @@
   background: rgba(21, 35, 23, 0.7);
   z-index: 1;
 }
-.full-tip {
-  max-width: 800px;
+.tips-company {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  letter-spacing: 4.5px;
+  font-weight: 300;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.full-tip-title {
+  font-size: 54px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.full-tip-content {
+  max-width: 70%;
   margin: 40px auto;
   padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.full-tip h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.full-tip p {
-  font-family: "Mulish", sans-serif;
-  font-size: 1em;
-  line-height: 1.6;
 }
 
 .full-tip-image {
-  width: 100%;
+  width: 50%;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  float: left;
+  margin-right: 30px;
+}
+
+.full-tip-text {
+  font-size: 1.2em;
+  line-height: 1.6em;
 }
