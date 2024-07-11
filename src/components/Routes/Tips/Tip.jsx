@@ -18,7 +18,7 @@ const Tip = ({ id, title, content, image, onReadMore }) => {
       <img src={image} alt={title} className="tip-image" />
       <div className="tip-content">
         <h3 className="tip-title">{title}</h3>
-        <p className="tip-text">{truncateContent(content, 50)}</p>
+        <p className="tip-text">{truncateContent(content, 30)}</p>
         <button className="read-more-button">Read More</button>
       </div>
     </div>
